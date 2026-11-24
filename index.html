@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="«Тёплая чашка» — уютное городское кафе: свежий кофе, домашняя выпечка, акции для студентов и бонусная программа.">
+  <title>Тёплая чашка — уютное городское кафе</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Тёплая чашка — на главную">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="#c8884a"/>
+          <path d="M13 21h20v7a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8z" fill="#fffaf1"/>
+          <path d="M33 23h2a3.5 3.5 0 0 1 0 7h-3" fill="none" stroke="#fffaf1" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M18 11c-1.6 2 1.6 3.4 0 5.6M24 10c-1.6 2 1.6 3.4 0 5.6M30 11c-1.6 2 1.6 3.4 0 5.6" fill="none" stroke="#fffaf1" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Тёплая чашка</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню навигации">
+      <label for="nav-toggle" class="burger" aria-hidden="true"><span></span></label>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#promos">Акции</a></li>
+          <li><a href="#loyalty">Бонусы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">Городское кафе для своих</span>
+          <h1 id="hero-title">Налей себе <em>немного тепла</em> между парами и делами</h1>
+          <p>Свежий кофе, домашняя выпечка и тихий уголок для разговоров или работы с ноутбуком. Заходите в любое время — мы всегда рады.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn">Выбрать напиток</a>
+            <a href="#contacts" class="btn btn--ghost">Как нас найти</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero.jpg" alt="Уютная атмосфера кафе «Тёплая чашка»">
+        </div>
+      </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="about-title">О нас</h2>
+          <p>История маленькой кофейни, которая стала любимым местом района.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>«Тёплая чашка» открылась в 2018 году как крошечная кофейня на углу тихой улицы. Мы хотели создать место, куда хочется возвращаться: с мягким светом, запахом свежей выпечки и музыкой, которая не мешает думать.</p>
+            <p>Сегодня это уютное городское кафе. Здесь можно поработать за большим столом у окна, встретиться с друзьями или взять напиток с собой по дороге на пары. Наши бариста знают постоянных гостей в лицо и всегда встречают улыбкой.</p>
+            <ul class="facts">
+              <li><strong>2018</strong><span>год открытия</span></li>
+              <li><strong>18</strong><span>напитков в меню</span></li>
+              <li><strong>4,9</strong><span>рейтинг гостей</span></li>
+            </ul>
+          </div>
+          <figure class="about-card">
+            <img src="images/history.jpg" alt="История кафе «Тёплая чашка»">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- МЕНЮ -->
+    <section id="menu" class="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="menu-title">Меню</h2>
+          <p>Шесть фирменных позиций, которые гости заказывают чаще всего.</p>
+        </div>
+        <div class="menu-grid">
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon" aria-hidden="true">☕</div><span class="menu-tag">КОФЕ</span></div>
+            <h3>Флэт уайт</h3>
+            <p>Двойной эспрессо с нежной молочной пенкой. Идеален для бодрого утра.</p>
+            <div class="price">220 ₽ <small>250 мл</small></div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon"><img src="images/menu-latte.jpg" alt="Латте «Карамель»"></div><span class="menu-tag">КОФЕ</span></div>
+            <h3>Латте «Карамель»</h3>
+            <p>Мягкий кофе с карамельным сиропом и взбитым молоком.</p>
+            <div class="price">260 ₽ <small>300 мл</small></div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon"><img src="images/menu-raf.jpg" alt="Раф «Ваниль»"></div><span class="menu-tag">КОФЕ</span></div>
+            <h3>Раф «Ваниль»</h3>
+            <p>Сливки, ваниль и эспрессо — нежный и обволакивающий вкус.</p>
+            <div class="price">280 ₽ <small>300 мл</small></div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon" aria-hidden="true">🍫</div><span class="menu-tag">БЕЗ КОФЕИНА</span></div>
+            <h3>Какао с маршмеллоу</h3>
+            <p>Густой горячий шоколад с воздушным маршмеллоу. Согревает в любую погоду.</p>
+            <div class="price">240 ₽ <small>300 мл</small></div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon" aria-hidden="true">🍰</div><span class="menu-tag">ДЕСЕРТ</span></div>
+            <h3>Чизкейк «Нью-Йорк»</h3>
+            <p>Классический десерт с бархатистой текстурой и ягодным соусом.</p>
+            <div class="price">320 ₽ <small>150 г</small></div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-top"><div class="menu-icon" aria-hidden="true">🥐</div><span class="menu-tag">ВЫПЕЧКА</span></div>
+            <h3>Круассан с миндалём</h3>
+            <p>Хрустящие слои с миндальным кремом и сахарной пудрой.</p>
+            <div class="price">190 ₽ <small>120 г</small></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- АКЦИИ -->
+    <section id="promos" class="promos" aria-labelledby="promos-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="promos-title">Акции</h2>
+          <p>Актуальные предложения, чтобы любимый кофе стал ещё приятнее.</p>
+        </div>
+        <div class="promo-grid">
+          <article class="promo-card">
+            <span class="label">СТУДЕНТАМ</span>
+            <h3>−15% на всё меню</h3>
+            <p>По студенческому билету с 12:00 до 16:00 в будние дни.</p>
+          </article>
+          <article class="promo-card">
+            <span class="label">ПО ВТОРНИКАМ</span>
+            <h3>2 по цене 1</h3>
+            <p>С 18:00 до 21:00 при заказе двух напитков второй — в подарок.</p>
+          </article>
+          <article class="promo-card">
+            <span class="label">УТРЕННИЙ СЕТ</span>
+            <h3>Капучино + круассан — 330 ₽</h3>
+            <p>Выгодное начало дня каждый день до 11:00.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- БОНУСНАЯ ПРОГРАММА -->
+    <section id="loyalty" class="loyalty" aria-labelledby="loyalty-title">
+      <div class="container">
+        <div class="loyalty-box">
+          <div class="loyalty-intro">
+            <div class="section-head" style="margin-bottom:0">
+              <h2 id="loyalty-title">Бонусная программа</h2>
+            </div>
+            <p>Копите баллы за каждую покупку и оплачивайте ими часть следующих заказов. <strong>1 балл = 1 рубль.</strong> Карта лояльности оформляется бесплатно на кассе.</p>
+            <a href="#contacts" class="btn">Оформить карту</a>
+            <p class="note">* Баллы действуют 6 месяцев с момента начисления. Подробные условия уточняйте у бариста.</p>
+          </div>
+          <ol class="rules">
+            <li><b>5% баллами</b> с каждой покупки: за чек в 500 ₽ вы получаете 25 баллов.</li>
+            <li><b>До 30% чека</b> можно оплатить накопленными баллами.</li>
+            <li><b>Каждый 7-й напиток</b> в подарок — отметки ставим автоматически.</li>
+            <li><b>Подарок на день рождения:</b> десерт на выбор в течение недели.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contacts-title">Контакты</h2>
+          <p>Заходите в гости или напишите нам — будем рады.</p>
+        </div>
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <h3>Адрес</h3>
+            <address>ул. Пушкина, 15<br>Москва</address>
+          </div>
+          <div class="contact-card">
+            <h3>Часы работы</h3>
+            <dl>
+              <div><dt>Пн–Пт</dt><dd>8:00–22:00</dd></div>
+              <div><dt>Сб–Вс</dt><dd>9:00–23:00</dd></div>
+            </dl>
+          </div>
+          <div class="contact-card">
+            <h3>Связь</h3>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:hello@warmcup.ru">hello@warmcup.ru</a>
+          </div>
+          <div class="contact-card">
+            <h3>Соцсети</h3>
+            <div class="socials">
+              <a href="#" aria-label="Мы во ВКонтакте">ВКонтакте</a>
+              <a href="#" aria-label="Мы в Telegram">Telegram</a>
+              <a href="#" aria-label="Мы в Instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo" aria-label="Тёплая чашка — наверх">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="#c8884a"/>
+          <path d="M13 21h20v7a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8z" fill="#fffaf1"/>
+          <path d="M33 23h2a3.5 3.5 0 0 1 0 7h-3" fill="none" stroke="#fffaf1" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>Тёплая чашка</span>
+      </a>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#promos">Акции</a></li>
+          <li><a href="#loyalty">Бонусы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© 2026 Тёплая чашка. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
