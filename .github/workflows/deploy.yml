@@ -1,20 +1,29 @@
-# Автоматическая публикация статического сайта на GitHub Pages
 name: Deploy static site
  
-# Триггеры: push в ветку main и ручной запуск
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
  
-# Права, необходимые для публикации на GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
  
 jobs:
+  # Задание 1: проверка разметки
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+ 
+      - name: Check HTML with HTMLHint
+        run: npx --yes htmlhint@1.1.4 --rules doctype-first,html-lang-require,title-require,tag-pair,id-unique,attr-no-duplication,alt-require index.html
+ 
+  # Задание 2: публикация (только если lint прошёл)
   deploy:
+    needs: lint
     runs-on: ubuntu-latest
     environment:
       name: github-pages
